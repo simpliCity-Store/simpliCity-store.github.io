@@ -1,0 +1,214 @@
+{ "products": [
+	{
+	    "name": "Placeholder",
+	    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pharetra ante orci, at tempus tortor porta eget. Donec sagittis elit. ",
+	    "category": "tees",
+	    "age": "adults",
+	    "price": 100000,
+	    "featured": false,
+	    "bought": 10,
+	    "added": 999,
+	    "photo": "default.png"
+	},
+	{
+	    "name": "Black Logo T-Shirt",
+	    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pharetra ante orci, at tempus tortor porta eget. Donec sagittis elit. ",
+	    "category": "tees",
+	    "age": "adults",
+	    "price": 40000,
+	    "featured": true,
+	    "bought": 4501,
+	    "added": 1,
+	    "photo": "black.png"
+	},
+	{
+	    "name": "White Logo T-Shirt",
+	    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pharetra ante orci, at tempus tortor porta eget. Donec sagittis elit. ",
+	    "category": "tees",
+	    "age": "kids",
+	    "price": 40000,
+	    "featured": false,
+	    "bought": 600,
+	    "added": 2,
+	    "photo": "white.png",
+	    "darkMode": true
+	},
+	{
+	    "name": "simpliCity Cartoon Art T-Shirt (Kids)",
+	    "category": "tees",
+	    "age": "kids",
+	    "price": 60000,
+	    "featured": true,
+	    "bought": 3012,
+	    "added": 5,
+	    "photo": "cartoon_city_kids.png"
+	},
+	{
+	    "name": "simpliCity Cartoon Art T-Shirt (Adults)",
+	    "category": "tees",
+	    "age": "adults",
+	    "price": 70000,
+	    "featured": false,
+	    "bought": 1500,
+	    "added": 6,
+	    "photo": "cartoon_city_adults.png"
+	},
+	{
+	    "name": "simpliCity City T-Shirt (Adults)",
+	    "category": "tees",
+	    "age": "adults",
+	    "price": 45000,
+	    "featured": false,
+	    "bought": 1031,
+	    "added": 3,
+	    "photo": "city_adults.png"
+	},
+	{
+	    "name": "Build your City Slogan T-Shirt (Kids)",
+	    "category": "tees",
+	    "age": "kids",
+	    "price": 50000,
+	    "featured": false,
+	    "bought": 1600,
+	    "added": 7,
+	    "photo": "wordmark_kids.png"
+	},
+	{
+	    "name": "Build your City Slogan T-Shirt (Adults)",
+	    "category": "tees",
+	    "age": "adults",
+	    "price": 60000,
+	    "featured": true,
+	    "bought": 1807,
+	    "added": 8,
+	    "photo": "wordmark_adults.png"
+	},
+	{
+	    "name": "Black Logo Hoodie",
+	    "category": "hoodies",
+	    "age": "kids",
+	    "price": 74000,
+	    "featured": true,
+	    "bought": 2000,
+	    "added": 4,
+	    "photo": "logo.png"
+	},
+	{
+	    "name": "Backprint Cartoon City Hoodie (Kids)",
+	    "category": "hoodies",
+	    "age": "kids",
+	    "price": 80000,
+	    "featured": false,
+	    "bought": 1200,
+	    "added": 9,
+	    "photo": "cartoon_city.png"
+	},
+	{
+	    "name": "Backprint Cartoon City Hoodie (Adults)",
+	    "category": "hoodies",
+	    "age": "adults",
+	    "price": 90000,
+	    "featured": false,
+	    "bought": 1200,
+	    "added": 9,
+	    "photo": "cartoon_city.png"
+	},
+	{
+	    "name": "Black Backprint Logo Hoodie",
+	    "category": "hoodies",
+	    "age": "adults",
+	    "price": 74000,
+	    "featured": false,
+	    "bought": 2000,
+	    "added": 4,
+	    "photo": "back_logo.png"
+	},
+	{
+	    "name": "House Icon White Hoodie (Adults)",
+	    "category": "hoodies",
+	    "age": "adults",
+	    "price": 70000,
+	    "featured": false,
+	    "bought": 2000,
+	    "added": 4,
+	    "photo": "house.png",
+	    "darkMode": true
+	},
+	{
+	    "name": "House Icon White Hoodie (Kids)",
+	    "category": "hoodies",
+	    "age": "kids",
+	    "price": 68000,
+	    "featured": false,
+	    "bought": 2000,
+	    "added": 4,
+	    "photo": "house.png",
+	    "darkMode": true
+	},
+	{
+	    "name": "House Sticker",
+	    "category": "stickers",
+	    "age": "none",
+	    "price": 20000,
+	    "featured": false,
+	    "bought": 2000,
+	    "added": 4,
+	    "photo": "sticker_house.png",
+	    "darkMode": true
+	},
+	{
+	    "name": "City Sticker",
+	    "category": "stickers",
+	    "age": "none",
+	    "price": 25000,
+	    "featured": false,
+	    "bought": 2000,
+	    "added": 4,
+	    "photo": "sticker_city.png",
+	    "darkMode": true
+	},
+	{
+	    "name": "Office Sticker",
+	    "category": "stickers",
+	    "age": "none",
+	    "price": 20000,
+	    "featured": false,
+	    "bought": 2000,
+	    "added": 4,
+	    "photo": "sticker_office.png",
+	    "darkMode": true
+	},
+	{
+	    "name": "simpliCity Dream Slogan Sticker",
+	    "category": "stickers",
+	    "age": "none",
+	    "price": 30000,
+	    "featured": false,
+	    "bought": 2000,
+	    "added": 4,
+	    "photo": "sticker_slogan.png",
+	    "darkMode": true
+	},
+	{
+	    "name": "Tree Sticker",
+	    "category": "stickers",
+	    "age": "none",
+	    "price": 20000,
+	    "featured": false,
+	    "bought": 2000,
+	    "added": 4,
+	    "photo": "sticker_tree.png",
+	    "darkMode": true
+	},
+	{
+	    "name": "simpliCity Cap",
+	    "category": "headwears",
+	    "age": "none",
+	    "price": 60000,
+	    "featured": false,
+	    "bought": 2000,
+	    "added": 4,
+	    "photo": "cap.png"
+	}
+    ]
+}

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>simpliCity Store</title>
+    <title>All Products &bullet; simpliCity Store</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body onload="loadFeatured('product-featured'); loadNewest('product-new', 4);">
+<body onload="loadAll('product-container')">
     <script src="/scripts/dropdown.js" defer></script>
     <script src="/scripts/productManager.js" defer></script>
     <script src="/scripts/sidebar.js" defer></script>
@@ -76,68 +76,10 @@
 
     <section class="banner"></section> 
     <section class="main">
-	<div class="shadow desktop">
-	    <div class="special-card corner">
-		<div class="category">
-		    <img src="/assets/products/tees/cartoon_city_kids.png" alt="">
-		    <span>Tees</span>
-		    <a class="button" href="">Shop &#129122;</a>
-		</div>
-		<div class="category">
-		    <img src="/assets/products/hoodies/back_logo.png" alt="">
-		    <span>Hoodies</span>
-		    <a class="button" href="">Shop &#129122;</a>
-		</div>
-		<div class="category">
-		    <img src="/assets/products/stickers/sticker_house.png" alt="">
-		    <span>Stickers</span>
-		    <a class="button" href="">Shop &#129122;</a>
-		</div>
-		<div class="category">
-		    <img src="/assets/products/tees/default.png" alt="">
-		    <span>Collectibles</span>
-		    <a class="button" href="">Shop &#129122;</a>
-		</div>
+	<div class="content content-clean">
+	    <h1>All Products</h1>
+	    <div class="product-container" id="product-container">
 	    </div>
-	</div>
-	<div class="content">
-	    <h1>Featured</h1>
-	    <div class="product-container" id="product-featured">
-	    </div>
-	    <h1>Shop for..</h1>
-	    <div class="flex-container row gap" style="margin-bottom: 20px;">
-	        <a class="img-card" href="" style="background-image: url('/assets/banners/simpliCity.png');">
-		    <div class="gradient-overlay"></div>
-		    <span class="img-card-title">Kids</span>
-		</a>
-	        <a class="img-card" href="" style="background-image: url('/assets/banners/simpliCity.png');">
-		    <div class="gradient-overlay"></div>
-		    <span class="img-card-title">Adults</span>
-		</a>
-	    </div>
-	    <div class="flex-container row gap">
-	        <a class="img-card" href="" style="background-image: url('/assets/banners/simpliCity.png');">
-		    <div class="gradient-overlay"></div>
-		    <span class="img-card-title">New Drops</span>
-		</a>
-	        <a class="img-card" href="" style="background-image: url('/assets/banners/simpliCity.png');">
-		    <div class="gradient-overlay"></div>
-		    <span class="img-card-title">Best Seller</span>
-		</a>
-	        <a class="img-card" href="" style="background-image: url('/assets/banners/simpliCity.png');">
-		    <div class="gradient-overlay"></div>
-		    <span class="img-card-title">All</span>
-		</a>
-	    </div>
-	    <h1>New Drops</h1>
-	    <div class="product-container" id="product-new">
-	    </div>
-	    <div style="display: grid; place-items: center; margin-top: 20px; width: 100%;">
-		<a class="button" href="">View More &#129122;</a>
-	    </div>
-	    <h1>What is simpliCity?</h1>
-	    <p>simpliCity is a sandboxing game about building a city without all those hassle from complicated systems. The main focus of the game is the building aspect.
-Build a beautiful city with simple building mechanics and simple working system. Expand your city to whatever you want with no limit!</p>
 	</div>
     </section>
 </body>

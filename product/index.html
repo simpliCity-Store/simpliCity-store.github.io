@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body onload="loadFeatured('product-featured'); loadNewest('product-new', 4);">
+<body onload="loadProduct(getUrlVars()['product'])">
     <script src="/scripts/dropdown.js" defer></script>
     <script src="/scripts/productManager.js" defer></script>
     <script src="/scripts/sidebar.js" defer></script>
+    <script src="/scripts/selection.js"></script>
 
     <div class="navbar">
 	<div class="navbar-left desktop">
@@ -74,70 +75,35 @@
 	</div>
     </div>
 
-    <section class="banner"></section> 
+
     <section class="main">
-	<div class="shadow desktop">
-	    <div class="special-card corner">
-		<div class="category">
-		    <img src="/assets/products/tees/cartoon_city_kids.png" alt="">
-		    <span>Tees</span>
-		    <a class="button" href="">Shop &#129122;</a>
+	<div class="content content-clean" style="margin-top: 60px;">
+	    <a class="button" href="/products/" style="margin-bottom: 20px; padding-block: 10px;">&#129120; &nbsp; See All Products</a>
+	    <div class="flex-container row" style="gap: 40px;">
+		<div class="img-container product-image corner flex-grow" id="img-container"><img src="/assets/products/tees/default.png" alt="" id="img"></div>
+		<div class="flex-grow">
+		    <div class="flex-container" style="place-items: center; gap: 10px;">
+			<h1 class="flex-grow" id="name" style="margin: 0;">Product Name</h1>
+			<span class="material-symbols-outlined">favorite</span>
+		    </div>
+		    <h3 id="price">Rp 999.999.999,-</h3>
+		    <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pharetra ante orci, at tempus tortor porta eget. Donec sagittis elit. </p>
+		    <div class="selection-container" id="selection1">
+			<div class="selection active" onclick="select('selection1', 0)"><span class="material-symbols-outlined">male</span></div>
+		        <div class="selection" onclick="select('selection1', 1)"><span class="material-symbols-outlined">female</span></div>
+		    </div>
+		    <div class="selection-container" id="selection2">
+			<div class="selection active" onclick="select('selection2', 0)">S</div>
+			<div class="selection" onclick="select('selection2', 1)">M</div>
+			<div class="selection" onclick="select('selection2', 2)">L</div>
+			<div class="selection" onclick="select('selection2', 3)">XL</div>
+		    </div>
+		    <div class="flex-container" style="gap: 10px">
+			<input type="text" inputmode="numeric" pattern="[0-9]*" style="width: 100px;" value="1">
+			<a class="button flex-grow black" href="javascript:void(0)" onclick="addToCart(getUrlVars()['product'])"><span class="material-symbols-outlined">shopping_cart</span> Add to Cart</a>
+		    </div>
 		</div>
-		<div class="category">
-		    <img src="/assets/products/hoodies/back_logo.png" alt="">
-		    <span>Hoodies</span>
-		    <a class="button" href="">Shop &#129122;</a>
-		</div>
-		<div class="category">
-		    <img src="/assets/products/stickers/sticker_house.png" alt="">
-		    <span>Stickers</span>
-		    <a class="button" href="">Shop &#129122;</a>
-		</div>
-		<div class="category">
-		    <img src="/assets/products/tees/default.png" alt="">
-		    <span>Collectibles</span>
-		    <a class="button" href="">Shop &#129122;</a>
-		</div>
 	    </div>
-	</div>
-	<div class="content">
-	    <h1>Featured</h1>
-	    <div class="product-container" id="product-featured">
-	    </div>
-	    <h1>Shop for..</h1>
-	    <div class="flex-container row gap" style="margin-bottom: 20px;">
-	        <a class="img-card" href="" style="background-image: url('/assets/banners/simpliCity.png');">
-		    <div class="gradient-overlay"></div>
-		    <span class="img-card-title">Kids</span>
-		</a>
-	        <a class="img-card" href="" style="background-image: url('/assets/banners/simpliCity.png');">
-		    <div class="gradient-overlay"></div>
-		    <span class="img-card-title">Adults</span>
-		</a>
-	    </div>
-	    <div class="flex-container row gap">
-	        <a class="img-card" href="" style="background-image: url('/assets/banners/simpliCity.png');">
-		    <div class="gradient-overlay"></div>
-		    <span class="img-card-title">New Drops</span>
-		</a>
-	        <a class="img-card" href="" style="background-image: url('/assets/banners/simpliCity.png');">
-		    <div class="gradient-overlay"></div>
-		    <span class="img-card-title">Best Seller</span>
-		</a>
-	        <a class="img-card" href="" style="background-image: url('/assets/banners/simpliCity.png');">
-		    <div class="gradient-overlay"></div>
-		    <span class="img-card-title">All</span>
-		</a>
-	    </div>
-	    <h1>New Drops</h1>
-	    <div class="product-container" id="product-new">
-	    </div>
-	    <div style="display: grid; place-items: center; margin-top: 20px; width: 100%;">
-		<a class="button" href="">View More &#129122;</a>
-	    </div>
-	    <h1>What is simpliCity?</h1>
-	    <p>simpliCity is a sandboxing game about building a city without all those hassle from complicated systems. The main focus of the game is the building aspect.
-Build a beautiful city with simple building mechanics and simple working system. Expand your city to whatever you want with no limit!</p>
 	</div>
     </section>
 </body>
