@@ -104,7 +104,7 @@ function loadAge(id, age) {
                     element.innerHTML += `
 		    <div class="outer-product shadow">
 			<a class="product corner-small" href="/product?product=${i}">
-			    <div class="img-container ${data.products[i].darkMode ? 'img-container-dark' : ''}"><img src="/assets/products/${data.products[i].category}/${data.products[i].photo}"><img src="/assets/products/${data.products[i].category}/${data.products[i].photo}" alt=""></div>
+			    <div class="img-container ${data.products[i].darkMode ? 'img-container-dark' : ''}"><img src="/assets/products/${data.products[i].category}/${data.products[i].photo}"></div>
 			    <div class="flex-container">
 				<span class="product-title flex-grow">${data.products[i].name}</span>
 				<span class="material-symbols-outlined">favorite</span>
