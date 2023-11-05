@@ -1,5 +1,6 @@
 { "products": [
 	{
+	    "id": 0,
 	    "name": "Placeholder",
 	    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pharetra ante orci, at tempus tortor porta eget. Donec sagittis elit. ",
 	    "category": "tees",
@@ -11,10 +12,10 @@
 	    "photo": "default.png"
 	},
 	{
+	    "id": 1,
 	    "name": "Black Logo T-Shirt",
-	    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pharetra ante orci, at tempus tortor porta eget. Donec sagittis elit. ",
 	    "category": "tees",
-	    "age": "adults",
+	    "age": "all",
 	    "price": 40000,
 	    "featured": true,
 	    "bought": 4501,
@@ -22,10 +23,10 @@
 	    "photo": "black.png"
 	},
 	{
+	    "id": 2,
 	    "name": "White Logo T-Shirt",
-	    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pharetra ante orci, at tempus tortor porta eget. Donec sagittis elit. ",
 	    "category": "tees",
-	    "age": "kids",
+	    "age": "all",
 	    "price": 40000,
 	    "featured": false,
 	    "bought": 600,
@@ -34,6 +35,7 @@
 	    "darkMode": true
 	},
 	{
+	    "id": 3,
 	    "name": "simpliCity Cartoon Art T-Shirt (Kids)",
 	    "category": "tees",
 	    "age": "kids",
@@ -44,6 +46,7 @@
 	    "photo": "cartoon_city_kids.png"
 	},
 	{
+	    "id": 4,
 	    "name": "simpliCity Cartoon Art T-Shirt (Adults)",
 	    "category": "tees",
 	    "age": "adults",
@@ -54,6 +57,7 @@
 	    "photo": "cartoon_city_adults.png"
 	},
 	{
+	    "id": 5,
 	    "name": "simpliCity City T-Shirt (Adults)",
 	    "category": "tees",
 	    "age": "adults",
@@ -64,6 +68,7 @@
 	    "photo": "city_adults.png"
 	},
 	{
+	    "id": 6,
 	    "name": "Build your City Slogan T-Shirt (Kids)",
 	    "category": "tees",
 	    "age": "kids",
@@ -74,6 +79,7 @@
 	    "photo": "wordmark_kids.png"
 	},
 	{
+	    "id": 7,
 	    "name": "Build your City Slogan T-Shirt (Adults)",
 	    "category": "tees",
 	    "age": "adults",
@@ -84,9 +90,10 @@
 	    "photo": "wordmark_adults.png"
 	},
 	{
+	    "id": 8,
 	    "name": "Black Logo Hoodie",
 	    "category": "hoodies",
-	    "age": "kids",
+	    "age": "all",
 	    "price": 74000,
 	    "featured": true,
 	    "bought": 2000,
@@ -94,19 +101,10 @@
 	    "photo": "logo.png"
 	},
 	{
-	    "name": "Backprint Cartoon City Hoodie (Kids)",
+	    "id": 10,
+	    "name": "Backprint Cartoon City Hoodie",
 	    "category": "hoodies",
-	    "age": "kids",
-	    "price": 80000,
-	    "featured": false,
-	    "bought": 1200,
-	    "added": 9,
-	    "photo": "cartoon_city.png"
-	},
-	{
-	    "name": "Backprint Cartoon City Hoodie (Adults)",
-	    "category": "hoodies",
-	    "age": "adults",
+	    "age": "all",
 	    "price": 90000,
 	    "featured": false,
 	    "bought": 1200,
@@ -114,6 +112,7 @@
 	    "photo": "cartoon_city.png"
 	},
 	{
+	    "id": 11,
 	    "name": "Black Backprint Logo Hoodie",
 	    "category": "hoodies",
 	    "age": "adults",
@@ -124,9 +123,10 @@
 	    "photo": "back_logo.png"
 	},
 	{
-	    "name": "House Icon White Hoodie (Adults)",
+	    "id": 12,
+	    "name": "House Icon White Hoodie",
 	    "category": "hoodies",
-	    "age": "adults",
+	    "age": "all",
 	    "price": 70000,
 	    "featured": false,
 	    "bought": 2000,
@@ -135,17 +135,7 @@
 	    "darkMode": true
 	},
 	{
-	    "name": "House Icon White Hoodie (Kids)",
-	    "category": "hoodies",
-	    "age": "kids",
-	    "price": 68000,
-	    "featured": false,
-	    "bought": 2000,
-	    "added": 4,
-	    "photo": "house.png",
-	    "darkMode": true
-	},
-	{
+	    "id": 14,
 	    "name": "House Sticker",
 	    "category": "stickers",
 	    "age": "none",
@@ -157,6 +147,7 @@
 	    "darkMode": true
 	},
 	{
+	    "id": 15,
 	    "name": "City Sticker",
 	    "category": "stickers",
 	    "age": "none",
@@ -168,6 +159,7 @@
 	    "darkMode": true
 	},
 	{
+	    "id": 16,
 	    "name": "Office Sticker",
 	    "category": "stickers",
 	    "age": "none",
@@ -179,6 +171,7 @@
 	    "darkMode": true
 	},
 	{
+	    "id": 17,
 	    "name": "simpliCity Dream Slogan Sticker",
 	    "category": "stickers",
 	    "age": "none",
@@ -190,6 +183,7 @@
 	    "darkMode": true
 	},
 	{
+	    "id": 18,
 	    "name": "Tree Sticker",
 	    "category": "stickers",
 	    "age": "none",
@@ -201,6 +195,7 @@
 	    "darkMode": true
 	},
 	{
+	    "id": 19,
 	    "name": "simpliCity Cap",
 	    "category": "headwears",
 	    "age": "none",
@@ -209,6 +204,28 @@
 	    "bought": 2000,
 	    "added": 4,
 	    "photo": "cap.png"
+	},
+	{
+	    "id": 20,
+	    "name": "Small Wooden House Display",
+	    "category": "collectibles",
+	    "age": "none",
+	    "price": 120000,
+	    "featured": false,
+	    "bought": 2000,
+	    "added": 4,
+	    "photo": "house.png"
+	},
+	{
+	    "id": 21,
+	    "name": "Lamp Post Desk Lamp",
+	    "category": "collectibles",
+	    "age": "none",
+	    "price": 350000,
+	    "featured": false,
+	    "bought": 2000,
+	    "added": 4,
+	    "photo": "lamp.png"
 	}
     ]
 }

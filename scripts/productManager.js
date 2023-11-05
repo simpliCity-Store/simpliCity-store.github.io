@@ -76,7 +76,35 @@ function loadCategory(id, category) {
                     element.innerHTML += `
 		    <div class="outer-product shadow">
 			<a class="product corner-small" href="/product?product=${i}">
-			    <div class="img-container"><img src="/assets/products/${data.products[i].category}/${data.products[i].photo}" alt=""></div>
+			    <div class="img-container ${data.products[i].darkMode ? 'img-container-dark' : ''}"><img src="/assets/products/${data.products[i].category}/${data.products[i].photo}"></div>
+			    <div class="flex-container">
+				<span class="product-title flex-grow">${data.products[i].name}</span>
+				<span class="material-symbols-outlined">favorite</span>
+			    </div>
+			    <span class="price">Rp ${numberWithCommas(data.products[i].price)},-</span>
+			</a>
+		    </div>
+		`;
+                }
+            }
+        })
+        .catch((error) => {
+            console.error("Error:", error);
+        });
+}
+
+function loadAge(id, age) {
+    fetch("/data/products.json")
+        .then((response) => response.json())
+        .then((data) => {
+            var element = document.getElementById(id);
+
+            for (var i = 0; i < data.products.length; i++) {
+                if (data.products[i].age == age || data.products[i].age == "all") {
+                    element.innerHTML += `
+		    <div class="outer-product shadow">
+			<a class="product corner-small" href="/product?product=${i}">
+			    <div class="img-container ${data.products[i].darkMode ? 'img-container-dark' : ''}"><img src="/assets/products/${data.products[i].category}/${data.products[i].photo}"><img src="/assets/products/${data.products[i].category}/${data.products[i].photo}" alt=""></div>
 			    <div class="flex-container">
 				<span class="product-title flex-grow">${data.products[i].name}</span>
 				<span class="material-symbols-outlined">favorite</span>
@@ -104,7 +132,7 @@ function loadFeatured(id) {
                     element.innerHTML += `
 		    <div class="outer-product shadow">
 			<a class="product corner-small" href="/product?product=${i}">
-			    <div class="img-container"><img src="/assets/products/${data.products[i].category}/${data.products[i].photo}" alt=""></div>
+			    <div class="img-container ${data.products[i].darkMode ? 'img-container-dark' : ''}"><img src="/assets/products/${data.products[i].category}/${data.products[i].photo}"></div>
 			    <div class="flex-container">
 				<span class="product-title flex-grow">${data.products[i].name}</span>
 				<span class="material-symbols-outlined">favorite</span>
@@ -134,14 +162,14 @@ function loadNewest(id, n) {
 	    } else {
 		maxValue = clamp(n, 0, products.length);
 	    }
-	    
+
 	    products.sort((a, b) => b.added - a.added);
 
             for (var i = 0; i < maxValue; i++) {
 		element.innerHTML += `
 		    <div class="outer-product shadow">
-			<a class="product corner-small" href="/product?product=${i}">
-			    <div class="img-container"><img src="/assets/products/${products[i].category}/${products[i].photo}" alt=""></div>
+			<a class="product corner-small" href="/product?product=${data.products[i].id}">
+			    <div class="img-container ${data.products[i].darkMode ? 'img-container-dark' : ''}"><img src="/assets/products/${products[i].category}/${products[i].photo}" alt=""></div>
 			    <div class="flex-container">
 				<span class="product-title flex-grow">${products[i].name}</span>
 				<span class="material-symbols-outlined">favorite</span>
@@ -177,7 +205,7 @@ function loadPopular(id, n) {
 		element.innerHTML += `
 		    <div class="outer-product shadow">
 			<a class="product corner-small" href="">
-			    <div class="img-container"><img src="/assets/products/${products[i].category}/${products[i].photo}" alt=""></div>
+			    <div class="img-container ${data.products[i].darkMode ? 'img-container-dark' : ''}"><img src="/assets/products/${products[i].category}/${products[i].photo}" alt=""></div>
 			    <div class="flex-container">
 				<span class="product-title flex-grow">${products[i].name}</span>
 				<span class="material-symbols-outlined">favorite</span>

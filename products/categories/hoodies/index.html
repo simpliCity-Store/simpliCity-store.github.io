@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>simpliCity Store</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body onload="loadCategory('product-container', 'hoodies')">
+    <script src="/scripts/dropdown.js" defer></script>
+    <script src="/scripts/productManager.js" defer></script>
+    <script src="/scripts/sidebar.js" defer></script>
+
+    <div class="navbar">
+	<div class="navbar-left desktop">
+	    <a class="navbar-link" href="javascript:toggleDropdown('products')" onmouseenter="openDropdown('products')">Products &blacktriangledown;</a>
+	    <a class="navbar-link" href="/products/">Shop All</a>
+	    <a class="navbar-link" href="/products/popular/">Best Seller</a>
+	    <a class="navbar-link" href="/products/new/">New Drops</a>
+	</div>
+	<a class="img-link desktop" href="/">
+	    <img class="navbar-img" src="/assets/logo/simpliCity.png" alt="">
+	</a>
+	<div class="navbar-right desktop">
+	    <a class="navbar-link" href="/favourites/"><span class="material-symbols-outlined">favorite</span></a>
+	    <a class="navbar-link" href="/cart/"><span class="material-symbols-outlined">shopping_cart</span></a>
+	    <vr>&nbsp;</vr>
+	    <a class="navbar-link" href="https://store.steampowered.com/app/2381230/simpliCity/">Play on Steam &#129125;</a>
+	</div>
+	<a class="img-link mobile" href="/">
+	    <img class="navbar-img" src="/assets/logo/simpliCity.png" alt="">
+	</a>
+	<div class="navbar-right mobile">
+	    <a class="navbar-link" href="javascript:void(0);" onclick="toggleSidebar();"><span class="material-symbols-outlined">menu</span></a>
+	</div>
+    </div>
+    <div id="products" class="dropdown row">
+	<div class="flex-container column gap-half flex-grow">
+	    <span class="dropdown-title">Apparel</span>
+	    <a class="navbar-link" href="/products/categories/tees/">Tees</a>
+	    <a class="navbar-link" href="/products/categories/hoodies/">Hoodies</a>
+	    <a class="navbar-link" href="/products/categories/headwears/">Headwears</a>
+	</div>
+	<div class="flex-container column gap-half flex-grow">
+	    <span class="dropdown-title">Accessories</span>
+	    <a class="navbar-link" href="/products/categories/stickers/">Stickers</a>
+	    <a class="navbar-link" href="/products/categories/collectibles/">Collectibles</a>
+	</div>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+	<a class="navbar-link" href="javascript:void(0)">Product Categories</a>
+	<div style="display: flex; flex-direction: column; gap: 8px; font-size: 1.1rem; opacity: .8;">
+	    <a class="navbar-link" href="/products/categories/tees/">Tees</a>
+	    <a class="navbar-link" href="/products/categories/hoodies/">Hoodies</a>
+	    <a class="navbar-link" href="/products/categories/headwears/">Headwears</a>
+	    <a class="navbar-link" href="/products/categories/stickers/">Stickers</a>
+	    <a class="navbar-link" href="/products/categories/collectibles/">Collectibles</a>
+	</div>
+	<hr>
+	<a class="navbar-link" href="/products/">Shop All</a>
+	<hr>
+	<a class="navbar-link" href="/products/popular/">Best Seller</a>
+	<hr>
+	<a class="navbar-link" href="/products/new/">New Drops</a>
+	<hr>
+	<a class="navbar-link" href="https://store.steampowered.com/app/2381230/simpliCity/">Play on Steam</a>
+	<hr>
+	<div class="flex-container" style="gap: 10px; justify-content: end;">
+	    <a class="navbar-link" href="/favourites/"><span class="material-symbols-outlined">favorite</span></a>
+	    <a class="navbar-link" href="/cart/"><span class="material-symbols-outlined">shopping_cart</span></a>
+	</div>
+    </div>
+
+    <section class="banner"></section> 
+    <section class="main">
+	<div class="content content-clean">
+	    <h1>Shop for Hoodies</h1>
+	    <div class="product-container" id="product-container">
+	    </div>
+	</div>
+    </section>
+</body>
+</html>
